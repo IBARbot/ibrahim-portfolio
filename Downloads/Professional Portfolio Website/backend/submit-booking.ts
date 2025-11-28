@@ -30,8 +30,8 @@ interface SheetsResult {
 
 const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxLJXTHny5JD3bEqX_qOcFgmt4RH37gRBKkRf3JeygoB4NU503_ey4ETloK3nS8sHETaA/exec';
 const RESEND_API_URL = 'https://api.resend.com/emails';
-const ADMIN_EMAIL = 'ibrahim.abdullayev1@gmail.com';
-const RESEND_API_KEY = 're_ct7ef3AG_N5uVpggnDXVtSrBKtM8ziEXE';
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'ibrahim.abdullayev1@gmail.com';
+const RESEND_API_KEY = process.env.RESEND_API_KEY || 're_ct7ef3AG_N5uVpggnDXVtSrBKtM8ziEXE';
 
 // ============================================
 // UTILITY FUNCTIONS
